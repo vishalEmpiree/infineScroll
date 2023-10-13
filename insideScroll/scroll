@@ -1,0 +1,55 @@
+// import InfiniteScroll from 'react-infinite-scroll-component'
+
+// import React, {useState, useEffect} from 'react'
+
+// const style = {
+//   height: 30,
+//   border: '1px solid green',
+//   margin: 6,
+//   padding: 8,
+// }
+
+// function InfiniteScrolling() {
+//   const [items, setItems] = useState([])
+
+//   const fetchMoreData = () => {
+//     // Simulate a fake async API call that sends
+//     // 20 more records in 1.5 seconds
+
+//     setTimeout(() => {
+//       setItems(prevItems => {
+//         console.log(prevItems)
+//         return [...prevItems, ...Array.from({length: 20})]
+//       })
+//     }, 1500)
+//   }
+//   // console.log(items)
+
+//   useEffect(() => {
+//     // Initialize the items with the first set of data
+//     fetchMoreData()
+//   }, [])
+
+//   return (
+//     <div>
+//       <h1>demo: react-infinite-scroll-component</h1>
+//       <hr />
+//       <InfiniteScroll
+//         dataLength={items.length}
+//         next={fetchMoreData}
+//         hasMore={true}
+//         loader={<h2>Loading...</h2>}
+//       >
+//         {items.map((_, index) => (
+//           <div style={style} key={index}>
+//             MyBoxDivContainer - # {index}
+//           </div>
+//         ))}
+//       </InfiniteScroll>
+//     </div>
+//   )
+// }
+
+// export default InfiniteScrolling
+
+
